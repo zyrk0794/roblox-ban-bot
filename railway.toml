@@ -1,0 +1,11 @@
+[build]
+builder = "dockerfile"
+dockerfile = "Dockerfile.bot"
+
+[deploy]
+startCommand = "python bot.py"
+```
+
+Ou plus simple, supprime le Dockerfile.bot et crée un nouveau fichier `runtime.txt` avec :
+```
+python-3.11.7
